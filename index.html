@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushanth Lunavath - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 100px 0 50px 0;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+            background: white;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .skill-item {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .skill-item i {
+            font-size: 24px;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        /* Projects */
+        .project-card {
+            background: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Contact */
+        .contact-info {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact-info i {
+            font-size: 24px;
+            color: #3498db;
+            margin-right: 10px;
+        }
+
+        .contact-item {
+            margin: 15px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/api/placeholder/200/200" alt="Sushanth Lunavath" class="profile-img">
+        <div class="intro">
+            <h1>Sushanth Lunavath</h1>
+            <p>Master's Student in Computer Science | Machine Learning Enthusiast</p>
+            <p>Passionate computer science professional with expertise in machine learning, deep learning, and web development. Currently pursuing a Master's degree at UAB, focusing on advanced computing concepts and their practical applications in solving real-world problems.</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>University of Alabama at Birmingham</h3>
+                <p>Master's in Computer Science</p>
+                <p>GPA: 3.2 | Jan 2023 – Dec 2024</p>
+                <p>Key Courses: Machine Learning, Deep Learning, Database Systems, Cloud Computing, Security</p>
+            </div>
+            <div class="education-item">
+                <h3>Sreenidhi Institute of Science and Technology</h3>
+                <p>Bachelor of Technology, Computer Science and Engineering</p>
+                <p>GPA: 3.15 | Aug 2017 – July 2021</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>C, Java, Python</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI & ML</h3>
+                    <p>Machine Learning, Deep Learning, NLP</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Data</h3>
+                    <p>SQL, MongoDB, Data Structures</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud</h3>
+                    <p>AWS, Cloud Security</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Label Sanitization Against Label Flipping Poisoning Attack</h3>
+                <p>Enhanced machine learning system reliability through robust worst-case analysis of attacks and defense mechanisms. Implemented KNN method for data point relabeling.</p>
+            </div>
+            <div class="project-card">
+                <h3>Online Movie and TV Show Streaming Application</h3>
+                <p>Developed a full-stack streaming application using Python, Django, and MongoDB. Implemented user rating system and content categorization features.</p>
+            </div>
+            <div class="project-card">
+                <h3>Chatbot</h3>
+                <p>Created an intelligent chatbot using NLP, Machine Learning, and Deep Learning techniques for enhanced customer interaction and query resolution.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+1 6592578625</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>sushanthtony10@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Birmingham, AL, 35205</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn Profile</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
